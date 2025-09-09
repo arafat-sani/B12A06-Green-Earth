@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawasm cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- tailwind & daisy ui cdn -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- navbar -->
+<div class="navbar bg-base-100   bg-[#15803D]  px-20 shadow-sm">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a>About</a></li>
+         <li><a>Gallery 2</a></li>
+        <li><a>Item 3</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl text-white">Green Earth</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li class="text-white"><a>About </a></li>
+      <li class="text-white"><a>Gallery </a></li>
+      <li class="text-white"><a>Plant a TREE </a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn bg-[#FACC15] rounded-4xl">Plant a Tree</a>
+  </div>
+</div>
+
+
+<!-- leaf -->
+ <section>
+
+<div class="flex items-center bg-[#CFF0DC]">
+
+<div>
+    <img src="./assets/hero-leaf1.png" alt="">
+</div>
+<div class="text-center">
+  <h2 class="font-bold text-4xl">Plant a Tree, Grow a Future</h2>
+  <p>Join our mission to plant 1 million trees and make the Earth greener for future
+    generations.</p>
+  <button class="btn bg-[#FACC15] rounded-3xl mt-4">Get Involved</button>
+</div>
+
+<div>
+    <img src="./assets/hero-leaf2.png" alt="">
+</div>
+</div>
+ </section>
+<!-- Choose Your Trees -->
+ <p class="font-bold text-3xl text-center py-5">Choose Your Trees</p>
+
+<section class="flex flex-col md:flex-row gap-3 px-20 bg-[#f0fdf4]">
+  <!-- Categories -->
+ 
+  <div class="mb-5" id="categories-container" >
+     <p class="text-xl font-bold">Categories</p>
+    
+ 
+  </div>
+
+  <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="first_card">
+    
+
+    
+    
+  
+  </div>
+
+
+ <!-- Cart -->
+<div class="flex-1 p-4 bg-[#F0FDF4] rounded">
+  <p class="text-xl font-bold mb-3">Your Cart</p>
+  <div id="cart-items" class="space-y-2"></div>
+  <div class="font-bold mt-3">
+    Total: ৳<span id="cart-total">0</span>
+  </div>
+</div>
+
+</section>
+
+ <!-- About the Campaign -->
+  <p class="font-bold text-center text-4xl py-10 bg-[#f0fdf4]">About the Campaign</p>
+  <section class=" flex flex-col md:flex-row   items-center justify-center px-4 bg-[#f0fdf4]   md:px-20 gap-6">
+<!-- <section class="flex flex-col md:flex-row items-center justify-center px-4 md:px-20 gap-6"> -->
+
+
+<div class="flex-1 ">
+    <img src="./assets/about.png" alt="">
+</div>
+<div class="flex-1 ">
+<p>Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.</p>
+<ul style="list-style-type: disc;">
+  <li>Restoration of natural habitats</li>
+  <li>Improvement of air quality</li>
+  <li>Support for local communities</li>
+</ul>
+
+
+
+</div>
+    
+  </section>
+
+  <!-- Our Impact -->
+<section class="bg-[#CFF0DC] ">
+<div class=" mt-10 py-16">
+
+<p class="text-center font-bold text-4xl py-5">Our Impact</p>
+
+
+
+<div class="flex flex-col md:flex-row justify-center gap-5 p-4">
+  <div>
+  <div class="card w-96 bg-base-100 card-xs shadow-sm">
+  <div class="card-body items-center justify-center">
+    <h2 class="card-title font-bold text-2xl"><span class="text-[#15803D]">500K</span></h2>
+    <p class="font-semibold ">Trees Planted</p>
+   
+  </div>
+</div>
+</div>
+
+  <div>
+  <div class="card w-96 bg-base-100 card-xs shadow-sm">
+  <div class="card-body items-center justify-center  ">
+    <h2 class="card-title font-bold text-2xl"><span class="text-[#15803D]" >500K</span></h2>
+    <p>Trees Planted</p>
+   
+  </div>
+</div>
+</div>
+  <div>
+  <div class="card w-96 bg-base-100 card-xs shadow-sm">
+  <div class="card-body items-center justify-center">
+    <h2 class="card-title font-bold text-2xl"><span class="text-[#15803D]">500K</span></h2>
+    <p>Trees Planted</p>
+   
+  </div>
+</div>
+</div>
+
+ 
+  
+</div>
+
+
+
+
+</div>
+</section>
+
+<!-- Plant a Tree Today -->
+ <section>
+
+<div class="bg-[#166534] flex  flex-col items-center justify-center py-20  ">
+
+<div>
+  <p class="font-bold text-white py-10 text-2xl">Plant a Tree Today</p>
+</div>
+<div  class=" md:w-4/12 bg-[#15803D] py-10  ">
+<form action="" class="flex flex-col gap-5   form  items-center" >
+
+<input type="text" placeholder="Your name " class="input" />
+<input type="text" placeholder="Your Email Address" class="input" />
+<input type="text" class="input" placeholder="Number of Trees " list="browsers" />
+<datalist id="browsers">
+  <option value="5"></option>
+  <option value="10"></option>
+  <option value="15"></option>
+</datalist>
+
+
+<button class="btn input bg-[#FACC15] rounded-4xl ">Donate Now </button>
+
+</form>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+ </section>
+
+<!-- footer -->
+<footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 bg-[#14532D]">
+  <aside>
+    <p class="text-white">© 2025 Green Earth. All Rights Reserved.</p>
+  </aside>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+<dialog id="word_modal" class="modal ">
+  <div class="modal-box">
+    <div id="details-container" class="space-y-5"></div> 
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./script/index.js"></script>
+
+</body>
+</html>
+
+
+
